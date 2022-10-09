@@ -1,0 +1,84 @@
+:root {
+  --color-bg: rgb(59, 77, 104);
+  --color-text: rgb(27, 27, 27);
+  --color-accent: rgb(135, 172, 194);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+  background-color: var(--color-bg);
+}
+
+#root {
+  width: 100vw;
+  height: 100%;
+}
+
+.app-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em;
+  gap: 2em;
+}
+
+.wrapper {
+  width: 50%;
+  min-height: auto;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > h2 {
+  margin: 0.5rem 1rem;
+}
+
+#editor {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-accent);
+  padding: 1rem;
+  resize: none;
+}
+
+#preview {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-accent);
+  padding: 1rem;
+  overflow: auto;
+}
+
+#preview img {
+  max-width: 100%;
+}
+
+#preview h1,
+#preview h2,
+#preview h3,
+#preview h4,
+#preview h5,
+#preview h6 {
+  text-decoration: underline;
+}
+
+#preview pre,
+#preview code {
+  background-color: aliceblue;
+}
+
+#preview blockquote {
+  border-left: 3px solid rgb(19, 39, 53);
+}
